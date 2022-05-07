@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`environments should match Development 1`] = `
+Object {
+  "debug": true,
+  "name": "Development",
+  "networks": Array [
+    "Local",
+    "Playground",
+    "TestNet",
+    "MainNet",
+  ],
+}
+`;
+
+exports[`environments should match Preview 1`] = `
+Object {
+  "debug": true,
+  "name": "Preview",
+  "networks": Array [
+    "Playground",
+    "TestNet",
+    "MainNet",
+  ],
+}
+`;
+
+exports[`environments should match Production 1`] = `
+Object {
+  "debug": false,
+  "name": "Production",
+  "networks": Array [
+    "MainNet",
+    "TestNet",
+    "Playground",
+  ],
+}
+`;

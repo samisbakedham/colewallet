@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
+      - uses: actions/setup-node@56337c425554a6be30cdef71bf441f15be286854
+        with:
+          node-version: 16
+          cache: 'npm'
+
+      - run: npm ci
+      - run: tsc --project mobile-app/tsconfig.json
+      - run: npx --no-install eslint .
+
+  unit:
+    name: Unit Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
+      - uses: actions/setup-node@56337c425554a6be30cdef71bf441f15be286854
+        with:
+          node-version: 16
+          cache: 'npm'
+
+      - run: npm ci
+      - run: npm run test:ci
+
+      - uses: codecov/codecov-action@81cd2dc8148241f03f5839d295e000b8f761e378
+        with:
+          fail_ci_if_error: true

@@ -1,0 +1,64 @@
+version: v1
+
+labels:
+  - label: area/workflow
+    sync: true
+    matcher:
+      files: ".github/**"
+
+  - label: area/website
+    sync: true
+    matcher:
+      files: "website/**"
+
+  - label: area/website-api
+    sync: true
+    matcher:
+      files: "website/src/api/**"
+
+  - label: area/api
+    sync: true
+    matcher:
+      files: "mobile-app/app/api/**"
+
+  - label: area/assets
+    sync: true
+    matcher:
+      files: "shared/assets/**"
+
+  - label: area/contexts
+    sync: true
+    matcher:
+      files: "mobile-app/app/contexts/**"
+
+  - label: area/hooks
+    sync: true
+    matcher:
+      files: "mobile-app/app/hooks/**"
+
+  - label: area/store
+    sync: true
+    matcher:
+      files: "shared/store/**"
+
+  - label: area/translations
+    sync: true
+    matcher:
+      files: "shared/translations/**"
+
+  - label: area/e2e
+    sync: true
+    matcher:
+      files: "cypress/**"
+
+  - label: area/ui-ux
+    sync: true
+    matcher:
+      files:
+        - "mobile-app/app/screens/**"
+        - "mobile-app/app/components/**"
+
+  - label: area/playground
+    sync: true
+    matcher:
+      files: "mobile-app/app/screens/PlaygroundNavigator/**"

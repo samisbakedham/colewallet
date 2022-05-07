@@ -1,0 +1,47 @@
+# IntelliJ
+.idea/*
+!.idea/inspectionProfiles/
+!.idea/dictionaries/
+!.idea/codeStyles/
+!.idea/modules.xml
+!.idea/*.iml
+!.idea/README.md
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+# node_modules
+node_modules
+
+# dist & pack
+dist
+*.tgz
+
+# debug log
+lerna-debug.log
+
+coverage
+reports
+.nyc_output
+jest-coverage
+cypress-coverage
+
+.expo/*
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# macOS
+.DS_Store
+missing_translations.json

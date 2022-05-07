@@ -1,0 +1,45 @@
+{
+  "build": {
+    "production": {
+      "node": "16.13.2",
+      "releaseChannel": "production",
+      "env": {
+        "EXPO_BUNDLE_IDENTIFIER": "com.defichain.app"
+      },
+      "ios": {
+        "image": "macos-big-sur-11.4-xcode-13.0"
+      }
+    },
+    "preview": {
+      "node": "16.13.2",
+      "android": {
+        "buildType": "apk"
+      },
+      "ios": {
+        "simulator": true
+      }
+    },
+    "ios_production": {
+      "extends": "production",
+      "env": {
+        "EXPO_BUNDLE_IDENTIFIER": "com.defichain.light.wallet"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "./ANDROID_SERVICE_ACCOUNT.json",
+        "track": "internal",
+        "releaseStatus": "draft"
+      },
+      "ios": {
+        "appleId": "EAS_APPLE_ID",
+        "ascAppId": "EAS_ASC_APP_ID"
+      }
+    }
+  },
+  "cli": {
+    "requireCommit": true
+  }
+}
