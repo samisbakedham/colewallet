@@ -2251,10 +2251,10 @@
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.3.tgz#555193ab2e3bb3b6adc3d551c9c030d9e860daf6"
   integrity sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==
 
-"@gorhom/bottom-sheet@^4.1.5":
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/@gorhom/bottom-sheet/-/bottom-sheet-4.2.2.tgz#97eeda934d2262aaf2a0c937688e0df3ea2f8a02"
-  integrity sha512-4e5pXYTxLdbEqBbicHjCVwVPDJjXZTGz40dwRwTyIaCy4OpDvgRWtUY26iIEjyNLdegdCkUduQ4OXcQmgfdT/w==
+"@gorhom/bottom-sheet@^4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@gorhom/bottom-sheet/-/bottom-sheet-4.3.0.tgz#88883ad7b085a4e4a0d1b087fd282513b0eecc7a"
+  integrity sha512-0RAkpdZj8hY/xsxKUFojKPEC/VAkUkU6sO7F31xYmjECCeDvc1BI/N6nl4NLRjMpEojfGld/kgCLjLordH9soQ==
   dependencies:
     "@gorhom/portal" "1.0.13"
     invariant "^2.2.4"
