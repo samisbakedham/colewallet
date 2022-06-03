@@ -21,7 +21,7 @@ jobs:
           npm i
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@bd72e1b7922d417764d27d30768117ad7da78a0e
+        uses: peter-evans/create-pull-request@923ad837f191474af6b1721408744feb989a4c27
         with:
           labels: kind/dependencies
           committer: DeFiChain Bot <github-bot@defichain.com>
@@ -50,7 +50,7 @@ jobs:
           npm i
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@bd72e1b7922d417764d27d30768117ad7da78a0e
+        uses: peter-evans/create-pull-request@923ad837f191474af6b1721408744feb989a4c27
         with:
           labels: kind/dependencies
           committer: DeFiChain Bot <github-bot@defichain.com>
